@@ -29,6 +29,9 @@ body {
   padding: 10px 0;
 }
 
+.header-logo {
+  float: left;
+}
 .menu {
   margin: 0;
   padding: 0;
