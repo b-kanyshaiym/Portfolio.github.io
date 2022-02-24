@@ -1,1 +1,3 @@
-This is my Portfolio-2
+# Deployed Link
+
+https://b-kanyshaiym.github.io/Portfolio.github.io/
