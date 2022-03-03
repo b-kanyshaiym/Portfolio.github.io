@@ -132,12 +132,14 @@ body {
   text-align: center;
 }
 
-.skills {
+.skills,
+.Portfolio {
   color: var(--pure-white);
   background-color: var(--accent);
 }
 
-.skills ul {
+.skills ul,
+.Portfolio ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -147,7 +149,8 @@ body {
   list-style: none;
 }
 
-.skills li {
+.skills li,
+.Portfolio li {
   padding: 10px 25px;
   background-color: var(--accent-light);
   border-radius: 4px;
@@ -175,7 +178,18 @@ body {
   border-radius: 8px;
 }
 
-.portfolio {
+.Portfolio section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Education {
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+
+.footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
