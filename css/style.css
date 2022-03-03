@@ -64,6 +64,10 @@ body {
   object-fit: contain;
 }
 
+.introl-img {
+  width: 300px;
+  height: 300px;
+}
 .header-menu {
   display: flex;
   margin: 0;
@@ -169,4 +173,10 @@ body {
   color: var(--pure-white);
   background-color: var(--accent);
   border-radius: 8px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
