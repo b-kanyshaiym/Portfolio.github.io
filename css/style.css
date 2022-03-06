@@ -184,13 +184,13 @@ body {
   flex-wrap: wrap;
 }
 
-.Education {
-  color: var(--pure-white);
-  background-color: var(--accent);
-}
-
 .footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.Education {
+  color: var(--pure-white);
+  background-color: var(--accent);
 }
