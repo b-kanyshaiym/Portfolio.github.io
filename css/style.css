@@ -34,6 +34,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .header {
   background-color: var(--accent);
 }
@@ -126,6 +127,20 @@ body {
 
 .contacts li {
   text-align: center;
+}
+
+.location-title {
+  position: relative;
+  border: 1px solid black;
+}
+
+.location-title::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(images/);
 }
 
 .skills {
