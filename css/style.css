@@ -1,6 +1,6 @@
 :root {
-  --accent: #174180;
-  --accent-light: #3764a7;
+  --accent: #f032d0;
+  --accent-light: #5d7dd4;
   --pure-white: #fff;
 }
 
@@ -34,6 +34,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .header {
   background-color: var(--accent);
 }
@@ -224,4 +225,19 @@ body {
 }
 .portfolio ul a:hover {
   background-color: var(--accent-light);
+}
+
+.loction-title {
+  background-image: url("/images/iconmonstr-location-pin-thin.svg");
+  background-repeat: no-repeat;
+}
+
+.phone-title {
+  background-image: url("/images/iconmonstr-phone-thin.svg");
+  background-repeat: no-repeat;
+}
+
+.email-title {
+  background-image: url(/images/iconmonstr-party-12.svg);
+  background-repeat: no-repeat;
 }
