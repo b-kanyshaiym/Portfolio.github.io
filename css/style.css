@@ -238,6 +238,11 @@ body {
   background-color: var(--accent-light);
 }
 
+@media (min-width: 220px) {
+  .portfolio ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media (min-width: 768px) {
   .about-inner {
     display: flex;
@@ -250,12 +255,6 @@ body {
 
   .portfolio ul {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 900px) {
-  .portfolio ul {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 
