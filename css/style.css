@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -35,6 +35,12 @@ body {
   text-align: center;
 }
 
+.header-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   background-color: var(--accent);
 }
@@ -44,11 +50,8 @@ body {
   text-decoration: none;
 }
 
-.header-nav {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-menu-item {
+  padding: 10px 0;
 }
 
 .header-logo {
@@ -66,10 +69,20 @@ body {
 }
 
 .header-menu {
-  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  flex-direction: column;
+  display: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 15px;
   list-style: none;
+  background-color: #f032d0;
+  width: 100%;
+}
+
+.header-menu-show {
+  display: flex;
 }
 
 .header-menu-link {
@@ -84,7 +97,7 @@ body {
   background-color: var(--accent-light);
 }
 
-.intro {
+.about {
   padding: 60px 0;
 }
 .intro-inner {
@@ -93,19 +106,17 @@ body {
   align-items: center;
 }
 
-.intro-left {
-  width: 30%;
-}
-
 .intro-img {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 60%;
+}
+.intro-left {
+  width: 30%;
 }
 .intro-right {
   width: 60%;
 }
-
 .intro-right h1,
 .intro-right h3 {
   margin: 0 0 15px;
@@ -227,17 +238,39 @@ body {
   background-color: var(--accent-light);
 }
 
-.loction-title {
-  background-image: url("/images/iconmonstr-location-pin-thin.svg");
-  background-repeat: no-repeat;
+@media (min-width: 768px) {
+  .about-inner {
+    display: flex;
+    gap: 15px;
+  }
+
+  .about-col {
+    width: 50%;
+  }
+
+  .portfolio ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.phone-title {
-  background-image: url("/images/iconmonstr-phone-thin.svg");
-  background-repeat: no-repeat;
+@media (min-width: 900px) {
+  .portfolio ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-.email-title {
-  background-image: url(/images/iconmonstr-party-12.svg);
-  background-repeat: no-repeat;
+@media (min-width: 1024px) {
+  .header-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: #f032d0;
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  .portfolio ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
